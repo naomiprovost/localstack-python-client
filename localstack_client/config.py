@@ -3,12 +3,12 @@ import json
 from six.moves.urllib.parse import urlparse
 
 # central entrypoint port for all LocalStack API endpoints
-EDGE_PORT = int(4566)
+EDGE_PORT = int(4766)
 
 # NOTE: The endpoints below will soon become deprecated/removed, as the default in the
 # latest version is to access all services via a single "edge service" (port 4566 by default)
 _service_endpoints_template = {
-    'edge': '{proto}://{host}:4566',
+    'edge': '{proto}://{host}:4766',
     'apigateway': '{proto}://{host}:4567',
     'apigatewayv2': '{proto}://{host}:4567',
     'kinesis': '{proto}://{host}:4568',
